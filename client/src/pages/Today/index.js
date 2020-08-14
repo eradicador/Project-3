@@ -6,11 +6,11 @@ export const PageOne = () => {
     return (
         <>
             <Message className="message-container" size="huge" secondary="true">
-                <Header size="huge"> Page One </Header>
+                <Header size="huge"> Today's Games </Header>
                 <p>This is a Protected Route</p>
             </Message>
         </>
     )
 }
 
-export default PageOne;
+export default Today;
