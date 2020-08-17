@@ -10,27 +10,28 @@ export const Home = () => {
     const showLoginBtn = () => {
         if (!isAuthenticated) {
             return (
-                <Button color="black" animated secondary>
-                    <Button.Content visible>Login</Button.Content>
-                    <Button.Content hidden>
-                        <Icon name='arrow right' />
-                    </Button.Content>
-                </Button>
+                // <Button color="black" animated secondary>
+                //     <Button.Content visible>Login</Button.Content>
+                //     <Button.Content hidden>
+                //         <Icon name='arrow right' />
+                //     </Button.Content>
+                // </Button>
+                <div></div>
             )
         }
     }
 
     return (
+        
         <div>
             <Message className="message-container" size="huge" secondary="true">
-                <Header size="huge"> Home</Header>
-                <p style={{ marginBottom: "5px" }}>This is a Boiler Plate MERN application with authentication using JSON Web Tokens.</p>
-                <p style={{ margin: "5px 0 25px" }}>This APP was design to be used as a starting point for any developer looking to integrate authentication with a MERN application.</p>
+                <Header size="huge"> Dream Chasers</Header>
+                <p style={{ marginBottom: "5px" }}>This is a website for all the dream chasers out there .</p>
+                <p style={{ margin: "5px 0 25px" }}>My name is Jason Bunch Im a professional trainer and a middle school teacher, this website is for all the people that want to chase a dream.</p>
                 <Link to="/login">
                     {showLoginBtn()}
                 </Link>
             </Message>
-
         </div>
     )
 };
