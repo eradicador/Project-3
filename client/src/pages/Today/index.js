@@ -2,7 +2,7 @@ import React from 'react';
 import { Header, Message } from "semantic-ui-react";
 
 
-export const PageOne = () => {
+export const Today = () => {
     return (
         <>
             <Message className="message-container" size="huge" secondary="true">

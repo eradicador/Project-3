@@ -11,6 +11,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import NoMatch from "../pages/NoMatch";
+import Merch from "../pages/Merch"
 
 export const App = () => {
 
@@ -30,6 +31,7 @@ export const App = () => {
                     <Route path="/register" component={Register} />
                     <PrivateRoute path="/dashboard" component={UserDashboard} />
                     <PrivateRoute path="/today" component={Today} />
+                    <PrivateRoute path="/merch" component={Merch} />
                     <Route component={NoMatch} />
                 </Switch>
             </Router>
