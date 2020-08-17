@@ -6,11 +6,13 @@ import { loadUser } from "../actions/authActions";
 import NavBar from "./NavBar";
 import Home from "../pages/Home";
 import UserDashboard from "../pages/UserDashboard";
-import Today from "../pages/Today";
+import Videos from "../pages/Videos";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import NoMatch from "../pages/NoMatch";
+import "../pages/style.css";
+import Footer from "./Footer";
 
 export const App = () => {
 
@@ -29,9 +31,10 @@ export const App = () => {
                     <Route path="/login" component={Login} />
                     <Route path="/register" component={Register} />
                     <PrivateRoute path="/dashboard" component={UserDashboard} />
-                    <PrivateRoute path="/today" component={Today} />
+                    <PrivateRoute path="/videos" component={Videos} />
                     <Route component={NoMatch} />
                 </Switch>
+                <Footer />
             </Router>
         </>
     )
