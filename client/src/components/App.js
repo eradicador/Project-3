@@ -13,6 +13,7 @@ import PrivateRoute from "./PrivateRoute";
 import NoMatch from "../pages/NoMatch";
 import "../pages/style.css";
 import Footer from "./Footer";
+import Merch from "../pages/Merch"
 
 export const App = () => {
 
@@ -32,6 +33,7 @@ export const App = () => {
                     <Route path="/register" component={Register} />
                     <PrivateRoute path="/dashboard" component={UserDashboard} />
                     <PrivateRoute path="/videos" component={Videos} />
+                    <PrivateRoute path="/merch" component={Merch} />
                     <Route component={NoMatch} />
                 </Switch>
                 <Footer />
