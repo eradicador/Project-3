@@ -10,6 +10,13 @@ export default {
     },
     loadUser(headers) {
         return axios.get("/auth/user", headers)
+    },
+    getMerch: function () {
+        return axios.get("/api/merch");
+    },
+    // Gets the book with the given id
+    getMerchID: function (id) {
+        return axios.get("/api/merch/" + id);
     }
 
 }
