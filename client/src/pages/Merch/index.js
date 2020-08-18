@@ -16,7 +16,10 @@ function Merch() {
 
     // load all the merch and set ot tp merch
     function loadMerch() {
-        API.getMerch().then(result => setMerch(result.data))
+        API.getMerch().then(result => {
+            console.log(result)
+            setMerch(result.data)
+        })
             .catch(err => console.log(err))
     }
 

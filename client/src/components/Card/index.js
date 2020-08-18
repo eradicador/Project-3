@@ -7,7 +7,7 @@ function Card(props) {
     {props.name}
   </div>
   <div class="card-body">
-    <img src={props.imageURL} alt="" />
+    <img src={props.imageURL} alt="" width="50%"/>
     <p class="card-text">{props.description}</p>
     <a href="#" class="btn btn-primary">{props.price}</a>
   </div>

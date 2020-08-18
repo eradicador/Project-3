@@ -21,7 +21,7 @@ export const Videos = () => {
                     <ReactPlayer
                         url="https://youtu.be/32oHIYU4pk8/"
                         fluid={false}
-                        width={490}
+                        width="100%"
                         height={360}
                     />
                     <Card.Body>
@@ -39,7 +39,7 @@ export const Videos = () => {
                     <ReactPlayer
                         url="https://youtu.be/JmwIUBGBb9I"
                         fluid={false}
-                        width={490}
+                        width="100%"
                         height={360}
                     />
                     <Card.Body>
@@ -57,7 +57,7 @@ export const Videos = () => {
                     <ReactPlayer
                         url="https://youtu.be/CMQp0bwjokw"
                         fluid={false}
-                        width={490}
+                        width="100%"
                         height={360}
                     />
                     <Card.Body>

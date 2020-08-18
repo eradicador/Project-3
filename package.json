@@ -4,6 +4,7 @@
   "description": "A boiler plate application using React, Express, Node and Mongo with JSON Web Tokens for authentication",
   "main": "server.js",
   "scripts": {
+    "merchseed": "node seeds/merchseed.js",
     "seed": "node seeds/seeds.js",
     "start": "node server.js",
     "server": "nodemon server.js",
