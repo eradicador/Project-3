@@ -5,7 +5,7 @@ const Merch = require("../models/merchModel");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/banter"
+  "mongodb://localhost/banterdb"
 );
 
 const merchSeed = [

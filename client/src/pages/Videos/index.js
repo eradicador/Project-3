@@ -4,6 +4,7 @@ import ReactPlayer from "react-player";
 import Card from "react-bootstrap/Card";
 import { CardDeck } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import "./style.css";
 
 
 

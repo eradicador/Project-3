@@ -1,10 +1,11 @@
 body{
-    background-image: url("./images/background1.png");
+    background-image: url("./images/hoop.jpg");
     /* margin-top: -210px;
     padding-bottom: 85%;*/
+    
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 65%;
+    background-size: 100%;
     background-clip: padding-box;
     background-color:black;
  }
@@ -16,3 +17,4 @@ body{
     bottom: 0;
     width: 100%;
 }
+
