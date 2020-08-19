@@ -25,23 +25,23 @@ const videoSchema = new Schema(
             type: Number,
             required: "https://youtu.be/32oHIYU4pk8"
         },
-        questions: [
-            {
-                q: {
-                    type: String,
-                    trim: true,
-                    required: "Add Your Exercise"
-                },
-                answer: {
-                    type: Boolean,
-                    required: "Select Exercise Type"
-                },
+        // questions: [
+        //     {
+        //         q: {
+        //             type: String,
+        //             trim: true,
+        //             required: "Add Your Exercise"
+        //         },
+        //         answer: {
+        //             type: Boolean,
+        //             required: "Select Exercise Type"
+        //         },
                 
-            }
-        ]
+        //     }
+        // ]
     }
 )
 
-const Workout = mongoose.model("questions", videoSchema);
+const Video = mongoose.model("questions", videoSchema);
 
-module.exports = questions;
+module.exports = Video;

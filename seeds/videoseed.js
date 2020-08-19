@@ -1,16 +1,16 @@
 let mongoose = require("mongoose");
-// let db = require("../models");
+const Video = require("../models/videoModel");
 
 mongoose.connect("mongodb://localhost/banterdb", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
 
-let Questions = [
+const videoSeed = [
   {
     day: new Date(),
     title:"basketball part 1",
-    descript:"placeholder description",
+    description:"placeholder description",
     videoUrl:"https://youtu.be/32oHIYU4pk8",
     level: 1,
     questions: [
@@ -32,7 +32,7 @@ let Questions = [
   {
     day: new Date(),
     title:"whatever",
-    descript:"placeholder description",
+    description:"placeholder description",
     videoUrl:"https://youtu.be/JmwIUBGBb9I",
     level: 2,
     questions: [
@@ -54,7 +54,7 @@ let Questions = [
   {
     day: new Date(),
     title:"whatever",
-    descript:"placeholder description",
+    description:"placeholder description",
     videoUrl:"",
     level: 3,
     questions: [
@@ -75,7 +75,7 @@ let Questions = [
   }, {
     day: new Date(),
     title:"whatever",
-    descript:"placeholder description",
+    description:"placeholder description",
     videoUrl:"",
     level: 4,
     questions: [
@@ -96,8 +96,20 @@ let Questions = [
   },
 ];
 
-db.banter.deleteMany({})
-  .then(() => db.banter.collection.insertMany(workoutSeed))
+// db.banter.deleteMany({})
+//   .then(() => db.banter.collection.insertMany(workoutSeed))
+//   .then(data => {
+//     console.log(data.result.n + " records inserted!");
+//     process.exit(0);
+//   })
+//   .catch(err => {
+//     console.error(err);
+//     process.exit(1);
+//   });
+
+Video
+  .remove({})
+  .then(() => Video.collection.insertMany(merchSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);

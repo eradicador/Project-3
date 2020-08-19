@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "merchseed": "node seeds/merchseed.js",
-    "seed": "node seeds/seeds.js",
+    "videoseed": "node seeds/videoseed.js",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
